@@ -10,7 +10,7 @@ import { StreamCall, StreamTheme } from "@stream-io/video-react-sdk";
 import { useParams } from "next/navigation";
 import { useState } from "react";
 
-const Meeting = ({ params }: { params: { id: string } }) => {
+const Meeting = () => {
   const { id } = useParams();
   const { user, isLoaded } = useUser();
   const { call, isCallLoading } = useGetCallById(id);
